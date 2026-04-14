@@ -9,6 +9,14 @@ CookMaster is a WPF recipe management application. Features include:<br>
 2. 👀 Select a recipe to view details or edit it.<br>
 3. 🔍 Use the search feature to find the recipe you're looking for.<br>
 
+<h2 style="color: teal;">Default accounts (for testing)</h2>
+- User: <code>user@example.com</code> / Password: <code>Password123</code><br>
+- Admin: <code>admin@example.com</code> / Password: <code>AdminPass123</code><br>
+
+<h3 style="color: teal;">Standardkonton (för test)</h3>
+- Användare: <code>user@example.com</code> / Lösenord: <code>Password123</code><br>
+- Admin: <code>admin@example.com</code> / Lösenord: <code>AdminPass123</code><br>
+
 <h2 style="color: orange;">Technologies used 💻</h2>
 - .NET 8<br>
 - WPF (Windows Presentation Foundation)<br>
