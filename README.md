@@ -9,6 +9,14 @@ CookMaster is a WPF recipe management application. Features include:<br>
 2. 👀 Select a recipe to view details or edit it.<br>
 3. 🔍 Use the search feature to find the recipe you're looking for.<br>
 
+<h2 style="color: teal;">Default accounts (for testing)</h2>
+- User: <code>user@example.com</code> / Password: <code>Password123</code><br>
+- Admin: <code>admin@example.com</code> / Password: <code>AdminPass123</code><br>
+
+<h3 style="color: teal;">Standardkonton (för test)</h3>
+- Användare: <code>user@example.com</code> / Lösenord: <code>Password123</code><br>
+- Admin: <code>admin@example.com</code> / Lösenord: <code>AdminPass123</code><br>
+
 <h2 style="color: orange;">Technologies used 💻</h2>
 - .NET 8<br>
 - WPF (Windows Presentation Foundation)<br>
@@ -55,27 +63,27 @@ Systemet initieras med <code>DefaultUserSeed</code>. Kommandon implementeras via
 ● Utveckla enhetstester (Unit Tests) för autentisering, 2FA, recept och validering.<br>
 <br>
 <h2> ➢ Fördelar och nackdelar med olika tekniska approacher </h2><br>
-<h3> Tjänsteupplösning</h3><br>
+<h3> Tjänsteupplösning</h3>
 ● Application.Resources (Service Locator) – Enkel setup men svår testat och svag livscykel kontroll.<br>
 ● DI-container (Microsoft.Extensions.DependencyInjection) – Mer testbarhet och flexibilitet, men kräver mer konfiguration.<br>
 <br>
-<h3> Lösenordshantering </h3><br>
+<h3> Lösenordshantering </h3>
 ● PasswordChanged-event + string – Enkelt men mindre säkert.<br>
 ● Attached Property + SecureString – Säkrare och mer MVVM-korrekt men kräver mer kod.<br>
 <br>
-<h3> Dialoger </h3><br>
+<h3> Dialoger </h3>
 ● MessageBox i ViewModel – Snabb lösning men hårt kopplad till UI.<br>
 ● IDialogService-abstraktion – Testbar och modulär men kräver extra implementation.<br>
 <br>
-<h3> Navigering </h3><br>
+<h3> Navigering </h3>
 ● Flera fönster – Enkel modell men fragmenterad hantering.<br>
 ● Shell + NavigationService – Centraliserad och flexibel men mer komplex.<br>
 <br>
-<h3> Validering </h3><br>
+<h3> Validering </h3>
 ● ErrorMessage i ViewModel – Enkel men ger ingen fältvis feedback.<br>
 ● INotifyDataErrorInfo / ValidationRules – Ger bättre UX men kräver mer struktur.<br>
 <br>
-<h2> ➢ Samlad bedömning </h2><br>
+<h2> ➢ Samlad bedömning </h2>
 Projektet visar en god förståelse för MVVM-arkitektur och är väl lämpat som en lärande prototyp. För att nå produktionsnivå bör fokus ligga på att tydligare separera UI-logik, införa DI, förbättra lösenordshantering och validering samt implementera datalagring. En stegvis refaktorering enligt denna plan kommer att göra systemet mer modulärt, säkrare och lättare att testa.<br>
 
----
+
